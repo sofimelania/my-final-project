@@ -1,38 +1,166 @@
+body{
+background-image: url("https://images.unsplash.com/photo-1652621398963-b3dbc8404f4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHVrcmFpbmUlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D");
+background-repeat: no-repeat;
+background-size: cover;
+padding: auto;
+background-color: #40679E;
+}
+
 .App {
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  background-color: #8CB9BD;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-family: "Open Sans", sans-serif;
+  color: #535C91;
+  font-size: 40px;
+  text-align: center; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2{
+  font-family: "Open Sans", sans-serif;
+  color: #535C91;
+  font-size: 30px;
+  text-align: center; 
+}
+
+h3{
+  font-family: "Open Sans", sans-serif;
+  color: #535C91;
+  font-size: 30px;
+  text-align: center; 
+}
+.back {
+  background-color: #FFDA78; 
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-size: 20px;
+}
+.header{
+  font-family: "Open Sans", sans-serif;
+  color: #535C91;
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+.link{
+padding: 10px 30px;
+font-size: 20px;
+text-decoration: none;
+text-transform: uppercase;
+color: #FFF6E9;
+font-family: "Open Sans", sans-serif;
+
+}
+.link:hover{
+  color: #211C6A;
+}
+.cont{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #535C91;
+  text-transform: uppercase;
+}
+
+.change {
+  background-color: #535C91;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+button {
+  margin: 10px;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.story{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+li{
+  list-style-type: none;
+  padding: 10px;
+  font-size: 30px;
+  color: #211C6A;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form{
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  color: #535C91;
+  font-size: 30px;
+}
+.form input{
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.input{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(69, 74, 119);
+}
+.footer{
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #535C91;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media only screen and (max-device-width: 480px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  img{
+    width: 200px;
+    height: 200px;
   }
-  to {
-    transform: rotate(360deg);
+button{
+  font-size: 10px;
+}
+  .input{
+    font-size: 10px;
+  }
+
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: 10px;
   }
 }
+  @media only screen and (max-device-width: 800px){
+
+  }
+
