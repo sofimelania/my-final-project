@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,12 +10,21 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import './App.css';
-
+import LoaderPage from './Loader/Loader';
 
 function App  () {
- 
+ const [stateLoader, setStateLoader] = useState(true);
+
+ useEffect(() => {
+  const timer =setTimeout(() => {
+      setStateLoader(false);
+   }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
  return (
     < div className="App">
+{stateLoader && <LoaderPage />}
   
 <Router>
       <nav>
